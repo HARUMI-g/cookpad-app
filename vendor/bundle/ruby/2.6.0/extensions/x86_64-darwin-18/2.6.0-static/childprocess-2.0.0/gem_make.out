@@ -1,0 +1,5 @@
+current directory: /Users/naran/workspace/Myapp/vendor/bundle/ruby/2.6.0/gems/childprocess-2.0.0/ext
+/Users/naran/.rbenv/versions/2.6.4/bin/ruby mkrf_conf.rb
+
+current directory: /Users/naran/workspace/Myapp/vendor/bundle/ruby/2.6.0/gems/childprocess-2.0.0/ext
+/Users/naran/.rbenv/versions/2.6.4/bin/ruby -rrubygems /Users/naran/workspace/Myapp/vendor/bundle/ruby/2.6.0/gems/rake-12.3.3/exe/rake RUBYARCHDIR\=/Users/naran/workspace/Myapp/vendor/bundle/ruby/2.6.0/extensions/x86_64-darwin-18/2.6.0-static/childprocess-2.0.0 RUBYLIBDIR\=/Users/naran/workspace/Myapp/vendor/bundle/ruby/2.6.0/extensions/x86_64-darwin-18/2.6.0-static/childprocess-2.0.0
