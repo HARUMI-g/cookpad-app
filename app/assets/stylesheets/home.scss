@@ -1,3 +1,182 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   font-family:"Avenir Next";
+   background-color:#f7f3e8;
+   width: 1200px;
+}
+
+li{
+  list-style:none;
+}
+
+a{
+  text-decoration: none;
+  color: #4B2D0E;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+.header-sub{
+  background-color:white;
+  border-bottom:solid 2px #f7f3e8;
+  height: 40px;
+  font-size:15px;
+  position:fixed;
+  width: 100%;
+ }
+ .header-sub ul{
+   padding-left:950px;
+   padding-top: 10px;
+ }
+
+ .header-sub li{
+   float:left;
+   padding: 00px 20px 10px 20px;
+ }
+
+ h2{
+   font-size:14px;
+ }
+
+
+
+.header-container{
+ border-bottom: inset 05px #FFE4C4;
+ display: flex;
+ margin-bottom: 0px;
+ height: 120px;
+ /*background-color:red;*/
+ margin-left: 100px;
+ margin-right: 100px;
+ width:1000px;
+ padding: 40px 100px 0px 100px;　
+}
+
+ /*ヘッターを固定しているためpadding-top はヘッターの高さと同じ高さで設定する必要あり*/
+
+
+
+.header-container-left{
+ float:left;
+ margin:20px 10px 10px 0px;
+ /*background-color: green;*/
+ width: 33%;
+text-align:left;
+}
+
+
+.header-container-center{
+ font-size:18px;
+ padding:20px 5px 20px 5px;
+ margin: 10px 5px 10px 5px;
+ /*background-color: yellow;*/
+ float:left;
+ width: 33%;
+}
+
+
+
+.search{
+ width:250px;
+}
+
+.submit{
+ background-color:#f5f5f5;
+}
+
+
+.header-container-right{
+  float:right;
+
+  height: 40px;
+   /*background-color: pink;*/
+  margin-top: 10px;
+  width: 30%;
+ }
+
+
+ .header-container-right li{
+   float:right;
+   padding: 00px 20px 00px 20px;
+
+ }
+
+
+
+    /*ここまでヘッターの設定です。*/
+
+
+
+ .contents{
+ height:500px;
+ width: 1200px;
+ /*background-color: red;*/
+ margin-left: 100px;
+ border: 1px solid #D2B48C;
+ float:none;
+}
+
+.sub-navi{
+  /*background-color: green;*/
+  float:left;
+  height:500px;
+  width: 20%;
+  padding:0px 20px 0px 20px;
+  line-height: 50px;
+  margin: 0px;
+  text-align: center;
+　border-right:solid thin　#D2B48C;
+}
+
+.main-contents{
+  /*background-color: yellow;*/
+  float:right;
+  width: 800px;
+  border-left:1px solid #D2B48C;
+  margin: 0px;
+  height:500px;
+}
+
+.main-contents img{
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/*
+.section{
+  width: 80px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: red;
+  display: inline;
+}
+*/
+
+/*ここからフッターの設定です。*/
+
+
+.footer{
+ color: #3c3c3c;
+ height:80px;
+ padding: 40px;
+/* background-color: red;*/
+ margin: 50px 100px;
+ width:1000px;
+ padding: 40px 100px 0px 100px;　
+ clear: both;
+}
+
+.footer p{
+  text-align: right;
+}
