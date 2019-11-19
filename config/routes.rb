@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resource :home
+  #resource :home
   root 'home#top'
 end
