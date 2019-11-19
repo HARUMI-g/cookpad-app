@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  get 'home/top', to:'home#top'
+  resource :home
+  root 'home#top'
 end

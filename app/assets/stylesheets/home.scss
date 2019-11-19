@@ -7,11 +7,11 @@
   padding: 0;
 }
 
-body {
+body{
    font-family:"Avenir Next";
    background-color:#f7f3e8;
    width: 1200px;
-}
+ }
 
 li{
   list-style:none;
@@ -22,7 +22,7 @@ a{
   color: #4B2D0E;
 }
 
-a:hover {
+a:hover{
  text-decoration: underline;
 }
 
@@ -59,7 +59,7 @@ a:hover {
  margin-left: 100px;
  margin-right: 100px;
  width:1000px;
- padding: 40px 100px 0px 100px;　
+ padding: 40px 100px 0px 100px;
 }
 
  /*ヘッターを固定しているためpadding-top はヘッターの高さと同じ高さで設定する必要あり*/
@@ -71,7 +71,7 @@ a:hover {
  margin:20px 10px 10px 0px;
  /*background-color: green;*/
  width: 33%;
-text-align:left;
+ text-align:left;
 }
 
 
@@ -97,18 +97,16 @@ text-align:left;
 
 .header-container-right{
   float:right;
-
   height: 40px;
    /*background-color: pink;*/
   margin-top: 10px;
   width: 30%;
- }
+}
 
 
  .header-container-right li{
    float:right;
    padding: 00px 20px 00px 20px;
-
  }
 
 
@@ -117,13 +115,13 @@ text-align:left;
 
 
 
- .contents{
- height:500px;
- width: 1200px;
- /*background-color: red;*/
- margin-left: 100px;
- border: 1px solid #D2B48C;
- float:none;
+.contents{
+  height:500px;
+  width: 1200px;
+  /*background-color: red;*/
+  margin-left: 100px;
+  border: 1px solid #D2B48C;
+  float:none;
 }
 
 .sub-navi{
@@ -135,7 +133,7 @@ text-align:left;
   line-height: 50px;
   margin: 0px;
   text-align: center;
-　border-right:solid thin　#D2B48C;
+  border-right:solid thin　#D2B48C;
 }
 
 .main-contents{
@@ -153,30 +151,21 @@ text-align:left;
   border-radius: 5px;
 }
 
-/*
-.section{
-  width: 80px;
-  margin-top: 20px;
-  margin-left: 20px;
-  background-color: red;
-  display: inline;
-}
-*/
+
 
 /*ここからフッターの設定です。*/
 
 
-.footer{
+footer{
  color: #3c3c3c;
  height:80px;
  padding: 40px;
-/* background-color: red;*/
  margin: 50px 100px;
  width:1000px;
- padding: 40px 100px 0px 100px;　
+ padding:40px 100px 0px 100px;
  clear: both;
 }
 
-.footer p{
+footer p{
   text-align: right;
 }
