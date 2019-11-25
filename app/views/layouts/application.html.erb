@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Myapp</title>
+    <title>Cookpad | <%= yield(:title) %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <header>
+     <div class="header-sub">
+       <ul>
+         <li><a href="#"><span style="color:#A87B4F;">ユーザー登録</span></a></li>
+         <li><a href="#"><span style="color:#A87B4F;">ログイン</span></a></li>
+       </ul>
+      </div>
+
+      <div class="header-container">
+        <div class="header-container-left">
+
+          <a href="top.html"><img src="/assets/cookpad-logo.png" width="250" alt="cookpad-logo" height="80"></a>
+        </div>
+        <div class="header-container-center">
+          <form action="xxxx" method="xxxx">
+            <input class="search" type="search" size="50" height=50px placeholder="料理名、食材名で検索">
+            <input class="submit" type="submit" value="レシピ検索">
+          </form>
+        </div>
+        <div class="header-container-right ">
+    　   <ul>
+          <li><a href="#">レシピを書く</a></li>
+          <li><a href="#">Myフォルダ</a></li>
+         </ul>
+  　    </div>
+      </div>
+    </header>
     <%= yield %>
+
+    <footer>
+
+       <div class="footer-logo">Cookpad
+       </div>
+
+        <div class="footer-copyright">
+           <p>COPYRIGHT &#169; cookpad sample ALL RIGHTS RESERVED. </p>
+       </div>
+    </footer>
   </body>
 </html>
