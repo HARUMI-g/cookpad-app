@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cookpad | <%= yield(:title) %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <div class="header">
+       <ul>
+         <li><%= link_to "Cookpad", root_path %></li>
+         <li><%= link_to "ユーザー新規登録", users_new_path %></li>
+         <li><%= link_to "ログイン", users_index_path %></li>
+         <li><%= link_to "全てのユーザー", users_index_path %></li>
+       </ul>
+    </div>
+    <% if flash[:notice] %>
+    <div class="flash"><%= flash[:notice] %></div>
+    <% end %>
+    
+    <%= yield %>
+    <footer>
+       <div class="footer-logo"><%= link_to "Cookpad", root_path %></div>
+
+        <div class="footer-copyright">
+           <p>COPYRIGHT &#169; cookpad sample ALL RIGHTS RESERVED. </p>
+       </div>
+    </footer>
+
+  </body>
+</html>
