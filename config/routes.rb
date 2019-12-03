@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   get 'users/index',to: 'users#index'
   get 'users/new',to:'users#new'
   post 'users', to:'users#create'
-  get 'users/id/edit',to: 'users#edit',as: :user_edit
-  post 'users/id/update',to: 'users#update',as: :user_update
   get 'users/:id',to: 'users#show' ,as: :user
+  get 'users/:id/edit',to: 'users#edit',as: :user_edit
+  post 'users/:id/update',to: 'users#update',as: :user_update
+  post 'users/:id/destroy', to: 'users#destroy', as: :user_destroy
 end
