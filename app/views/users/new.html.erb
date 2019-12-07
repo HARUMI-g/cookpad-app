@@ -3,19 +3,19 @@
   <div class="main users-new">
     <div class="container">
       <h1 class="form-heading">新規ユーザー登録</h1>
-      <%= form_tag users_path do %>
+      <%= form_with model:@user do |f|%>
         <div class="form users-form">
           <div class="form-body">
             <% @user.errors.full_messages.each do |message| %>
             <div class="form-error"><%= message %></div>
             <% end %>
-            <p>ユーザー名</p>
-            <input name="name" value="<%=@user.name%>">
-            <p>メールアドレス</p>
-            <input name="email" value="<%=@user.email%>">
-            <p>パスワード</p>
-            <input name="password_digest"><br>
-          <input type="submit" value="新規登録">
+            <%= f.label :name, 'ユーザー名'%><br>
+            <%=f.text_field :name %><br>
+            <%= f.label :email, 'メールアドレス'%><br>
+            <%=f.email_field :email %><br>
+            <%= f.label :password_digest, 'パスワード'%><br>
+            <%=f.password_field :password_digest %><br>
+            <%= f.submit "新規登録"%>
         </div>
       </div>
     </div>
