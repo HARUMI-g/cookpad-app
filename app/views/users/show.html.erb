@@ -5,9 +5,8 @@
       <div class="user">
         <h2><%= @user.name %></h2>
         <p><%= @user.email %></p>
-        <p><%= @user.password_digest %></p>
-        <%= link_to "ユーザー情報を編集する", user_edit_path(@user.id), class: "user_edit_button" %>
-        <%= link_to "削除", user_destroy_path(@user.id), method: :delete, class: "user_delete_button" %>
+        <%= link_to "ユーザー情報を編集する", edit_user_path(@user.id), class: "user_edit_button" %>
+        <%= link_to "削除", user_path(@user.id), method: :delete, class: "user_delete_button" %>
       </div>
     </div>
   </div>

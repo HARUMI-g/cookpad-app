@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cookpad | <%= yield(:title) %></title>
+    <title><%= yield(:title) %>|Cookpad </title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,9 +12,11 @@
     <header>
      <div class="header-sub">
        <ul>
-         <li><%= link_to "ユーザー新規登録", users_new_path %></li>
-         <li><a href="#"><span style="color:#A87B4F;">ログイン</span></a></li>
-       </ul>
+         <li><%= link_to "Cookpad", root_path %></li>
+         <li><%= link_to "ユーザー新規登録", new_user_path %></li>
+         <li><%= link_to "全てのユーザー", users_path %></li>
+         <li><%= link_to "ログイン", users_path %></li>
+        </ul>
       </div>
 
       <div class="header-container">
@@ -36,6 +38,9 @@
   　    </div>
       </div>
     </header>
+    <% if flash[:notice] %>
+     <div class="flash"><%= flash[:notice]%></div>
+    <% end %>
     <%= yield %>
 
     <footer>

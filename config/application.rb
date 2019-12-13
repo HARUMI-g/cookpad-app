@@ -10,8 +10,12 @@ module Myapp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
+    config.i18n.default_locale = :ja
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.yml').to_s]
     config.time_zone = 'Asia/Tokyo'
     config.generators do |g|
+      g.assets false
+      g.helper false
       g.test_framework false
     end
     # Settings in config/environments/* take precedence over those specified here.
