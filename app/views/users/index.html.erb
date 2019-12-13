@@ -1,0 +1,16 @@
+ <%= provide(:title, "ユーザー一覧") %>
+
+<div class="contents">
+  <div class="main users-index">
+    <div class="container">
+      <h1 class="users-heading">全てのユーザー</h1>
+      <% @users.each do |user| %>
+        <div class="users-index-item">
+          <div class="user-right">
+            <%= link_to user.name, user_path(user.id) %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
